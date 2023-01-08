@@ -1,5 +1,26 @@
 ﻿
 
+void ThreeSymbolArray()
+{
+    int size = 7;
+    string [] Array = new string [size];
+    FillStringArray(Array);
+    PrintStringArray(Array);
+    
+    int secondSize = size; //
+    string [] SecondArray = new string [secondSize];
+    int count = 0;
+    for (int i = 0; i < Array.Length; i++)
+        {
+            if (Array [i].Length < 4)
+            {
+                SecondArray [count] = Array [i];
+                count+=1;
+            }
+        }
+    PrintStringArray(SecondArray);
+}
+ThreeSymbolArray();
 
 void FillStringArray (string [] StrAr)
 {
